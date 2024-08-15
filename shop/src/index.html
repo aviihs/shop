@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="../icons/peng.png">
+
+<!-- ==================--- tailwind link link ---==================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- ==================--- google fonts link ---==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- ==================--- some custom design ---==================== -->
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    h1, h2{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+</style>
+
+</head>
+<body>
+<!-- ==================--- header section ---==================== -->
+
+        <nav class=" py-3 bg-white shadow-md md:py-0 md:flex md:item-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class=" px-5 cursor-pointer">
+         <img class="h-[30px] inline " src="../icons/logo.png" alt="">
+      </span>
+      <span  class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class=" px-4 md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7  md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-4 md:my-0"><a class=" text-xl hover:text-[#3c441d] duration-500" href="#">Home</a></li>
+      <li class="mx-4 my-4 md:my-0"><a class=" text-xl hover:text-[#3c441d] duration-500" href="#">Product</a></li>
+      <li class="mx-4 my-4 md:my-0"><a class=" text-xl hover:text-[#3c441d] duration-500" href="#">About</a></li>
+      <li class="mx-4 my-4 md:my-0"><a class=" text-xl hover:text-[#3c441d] duration-500" href="#">Contact</a></li>
+      <!-- <li class="mx-4 my-4 md:my-0"><a class=" text-xl hover:text-[#3c441d] duration-500" href="#"></a></li> -->
+
+      <button class=" px-4 bg-[#9CB53A] text-white font-black duration-500 py-2 mx-4 my-4 hover:bg-[#3c441d] rounded-full">
+        Get Started
+      </button>
+    </ul>
+  </nav>
+
+  <!--    </header>       -->
+    
+    <main>
+<!-- ==================--- home section ---==================== -->
+        <section id="Home" class=" bg-[#FFFBF0;]">
+            <div class="home-content flex flex-col items-center justify-between px-5  py-8 md:px-0 md:mx-20 md:flex-row ">
+                <div class="home-info">
+                    <h1 class="text-6xl"><span class="text-[#ffb121]">BE THE PENGUIN</span><br>OF WINTER</h1>
+                    <p class="text-gray-500 py-3">Lorem Ipsum is simply dummy text <br>of the printing and typesetting industry.</p>
+                    <a class="text-white bg-[#9CB53A] px-4  hover:bg-[#3c441d] duration-500 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                        <img class="inline w-[1.6rem] " src="../icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </a>
+                </div>
+                <div class="home-banner">
+                    <img src="../images/model.png" alt="">
+                </div>
+            </div>
+        </section>
+
+<!-- ==================--- woman jacket section ---==================== -->
+        <section id="women-jacket" class="my-20">
+            <h2 class="text-center text-2xl md:text-4xl ">Woman Jacket</h2>
+            <div class="jackets-are grid md:grid-cols-2 lg:grid-cols-3 md:mx-20 gap-8  ">
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0 rounded-md  ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd]  " src="../images/jacket-1.png" alt="">
+                    <h3 class="text-lg font-bold">Yellow Coat Jacket </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0 ">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500  px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0  rounded-md ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd] " src="../images/jacket-2.png" alt="">
+                    <h3 class="text-lg font-bold">Ladies Jacket  </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500  px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0 rounded-md ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd] " src="../images/jacket-3.png" alt="">
+                    <h3 class="text-lg font-bold">Woman Leather Jacket </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0 ">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500 px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ==================--- man jacket section ---==================== -->
+        <section id="women-jacket" class="my-20">
+            <h2 class="text-center text-2xl md:text-4xl ">Man Jacket</h2>
+            <div class="jackets-are grid md:grid-cols-2 lg:grid-cols-3 md:mx-20 gap-8 ">
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0  rounded-md  ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd]  " src="../images/jacket-4.png" alt="">
+                    <h3 class="text-lg font-bold">Snowboard Jacket Mens </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0 ">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500  px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0  rounded-md ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd] " src="../images/jacket-5.png" alt="">
+                    <h3 class="text-lg font-bold">Man Leather Jackets </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500 px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+                <div class="jacket bg-[#f1f1f1] shadow-lg p-4 mx-4 md:m-0 rounded-md ">
+                    <img class="w-[100%] rounded-md p-4 mb-6 bg-[#cdcdcd] " src="../images/jacket-6.png" alt="">
+                    <h3 class="text-lg font-bold">Man Casual Jackets </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="price-get flex items-center justify-between px-2 md:px-0 ">
+                        <strong class="text-[#fca80d] text-2xl ">$234</strong>
+                        <a class="text-white bg-[#9CB53A] hover:bg-[#3c441d] duration-500 px-4 py-[.51rem] mt-[1rem] rounded-[.3rem] font-medium " href="">
+                            <img class="inline w-[1.6rem]" src="../icons/shopping-cart 1.png" alt="">
+                            Let's talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ==================--- our services section ---==================== -->
+        <section id="Our-service" class="flex items-center justify-between gap-4 gap-x-36 flex-col-reverse mx-4 my-20 lg:flex-row md:mx-20">
+            <div class="service-info">
+                <div class="service-are flex items-center flex-col gap-4">
+                    <div class="service flex items-center justify-between flex-col gap-4 shadow-md rounded-md p-4 md:flex-row">
+                        <img class="w-24 md:w-14" src="../icons/house.png" alt="">
+                        <div class="service-details text-center md:text-left">
+                            <h3 class="text-lg font-bold">Find the Perfect Fit</h3>
+                            <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="service flex items-center justify-between flex-col gap-4 shadow-md rounded-md p-4 md:flex-row">
+                        <img class="w-24 md:w-14" src="../icons/box.png" alt="">
+                        <div class="service-details text-center md:text-left">
+                            <h3 class="text-lg font-bold">Find the Perfect Fit</h3>
+                            <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="service flex items-center justify-between flex-col gap-4 shadow-md rounded-md p-4 md:flex-row">
+                        <img class="w-24 md:w-14" src="../icons/question.png" alt="">
+                        <div class="service-details text-center md:text-left">
+                            <h3 class="text-lg font-bold">Find the Perfect Fit</h3>
+                            <p>Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-banner">
+                <img class="h-full md:h-80" src="../images/shopping.png" alt="">
+            </div>
+        </section>
+    </main>
+
+<!-- ==================--- footer section ---==================== -->
+    <footer class="bg-[#FFFBF0;] pt-8 pb-1 px-4 text-center ">
+        <p>&copy;CopyRight-2023 | All rights reserved by <a href="https://www.facebook.com/shiva01000" target="_blank" class="font-semibold">Av_Ihs</a></p>
+        <p class="font-bold" >#Hello</p>
+    </footer>
+
+
+    <script>
+        function Menu(e){
+            let list= document.querySelector('ul');
+    
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[61px]') , list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[61px]') , list.classList.remove('opacity-0'));
+        }
+      </script>
+</body>
+</html>
